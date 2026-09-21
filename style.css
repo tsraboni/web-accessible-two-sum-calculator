@@ -19,7 +19,7 @@ h2 {
   margin-top: 25px;
 }
 
-/* Keeps the solver and instructions side by side */
+/* Keeps solver and instructions side by side */
 .page-layout {
   display: flex;
   justify-content: center;
@@ -30,6 +30,11 @@ h2 {
 /* Main solver area */
 .solver {
   width: 500px;
+}
+
+/* Adds spacing between sections */
+.section {
+  margin-bottom: 25px;
 }
 
 /* Current array display */
@@ -73,7 +78,7 @@ button:hover {
   border: 2px solid green;
 }
 
-/* Instruction box on the right side */
+/* Instruction box */
 .instructions {
   width: 300px;
   background-color: white;
@@ -86,44 +91,59 @@ button:hover {
 /* Center instruction title */
 .instructions h2 {
   text-align: center;
+  margin-top: 0;
+}
+
+/* Space out instruction lines */
+.instructions p {
+  margin-bottom: 15px;
 }
 
 /* Mobile styling */
 @media (max-width: 600px) {
+  /* Keep both sections beside each other */
   .page-layout {
-    gap: 20px;
+    gap: 15px;
   }
 
+  /* Make solver smaller */
   .solver {
-    width: 55%;
+    width: 58%;
   }
 
+  /* Make instruction box smaller */
   .instructions {
-    width: 35%;
+    width: 32%;
     padding: 10px;
-    font-size: 13px;
+    font-size: 12px;
   }
 
+  /* Smaller main title */
   h1 {
     font-size: 30px;
   }
 
+  /* Smaller section headings */
   h2 {
     font-size: 18px;
   }
 
+  /* Inputs fit better */
   input {
     width: 75%;
   }
 
+  /* Buttons fit better */
   button {
     width: 85%;
   }
 
+  /* Smaller array text */
   #array-display {
     font-size: 16px;
   }
 
+  /* Smaller result text */
   #result-display {
     font-size: 14px;
   }

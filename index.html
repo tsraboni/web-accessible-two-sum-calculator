@@ -15,25 +15,67 @@
     <!-- Main page title -->
     <h1>Two Sum Solver</h1>
 
-    <!-- Shows the current array -->
-    <h2>Current Array</h2>
-    <p id="array-display">[4, 8, 12, 3]</p>
+    <!-- Main page layout -->
+    <div class="page-layout">
+      <!-- Left side: Two Sum solver -->
+      <div class="solver">
+        <!-- Current array -->
+        <div class="section">
+          <h2>Current Array</h2>
+          <p id="array-display">[4, 8, 12, 3]</p>
+        </div>
 
-    <!-- User can add a new number -->
-    <h2>Add a Number</h2>
-    <input id="number-input" type="number" />
-    <button id="add-button">Add Number</button>
+        <!-- Add a number -->
+        <div class="section">
+          <h2>Add a Number</h2>
 
-    <!-- User can remove the last number -->
-    <h2>Remove Last Number</h2>
-    <button id="pop-button">Remove Last Number</button>
+          <input id="number-input" type="number" />
 
-    <!-- User can enter the target value -->
-    <h2>Target</h2>
-    <input id="target-input" type="number" value="11" />
+          <button id="add-button">Add Number</button>
+        </div>
 
-    <!-- Shows the result from the Two Sum function -->
-    <h2>Result</h2>
-    <p id="result-display"></p>
+        <!-- Remove last number -->
+        <div class="section">
+          <h2>Remove Last Number</h2>
+
+          <button id="pop-button">Remove Last Number</button>
+        </div>
+
+        <!-- Target value -->
+        <div class="section">
+          <h2>Target</h2>
+
+          <input id="target-input" type="number" value="11" />
+        </div>
+
+        <!-- Two Sum result -->
+        <div class="section">
+          <h2>Result</h2>
+
+          <p id="result-display"></p>
+        </div>
+      </div>
+
+      <!-- Right side: Instructions -->
+      <div class="instructions">
+        <h2>How to Use</h2>
+
+        <p>1. Enter a number in the Add a Number box.</p>
+
+        <p>2. Click Add Number to add it to the array.</p>
+
+        <p>
+          3. Click Remove Last Number to remove the last value in the array.
+        </p>
+
+        <p>4. Enter a number in the Target box.</p>
+
+        <p>
+          5. The solver will look for two numbers that add up to the target.
+        </p>
+
+        <p>6. The result will show the indices and the two matching numbers.</p>
+      </div>
+    </div>
   </body>
 </html>
