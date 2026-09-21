@@ -1,0 +1,130 @@
+/* Style for the whole page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightblue;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Main title */
+h1 {
+  color: darkblue;
+  font-size: 40px;
+}
+
+/* Section headings */
+h2 {
+  color: navy;
+  margin-top: 25px;
+}
+
+/* Keeps the solver and instructions side by side */
+.page-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+/* Main solver area */
+.solver {
+  width: 500px;
+}
+
+/* Current array display */
+#array-display {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: white;
+  padding: 15px;
+  border: 2px solid darkblue;
+  display: inline-block;
+}
+
+/* Input boxes */
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin: 5px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: lightgray;
+}
+
+/* Result box */
+#result-display {
+  font-size: 20px;
+  font-weight: bold;
+  color: darkgreen;
+  background-color: white;
+  padding: 15px;
+  display: inline-block;
+  border: 2px solid green;
+}
+
+/* Instruction box on the right side */
+.instructions {
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  border: 2px solid darkblue;
+  text-align: left;
+  margin-top: 20px;
+}
+
+/* Center instruction title */
+.instructions h2 {
+  text-align: center;
+}
+
+/* Mobile styling */
+@media (max-width: 600px) {
+  .page-layout {
+    gap: 20px;
+  }
+
+  .solver {
+    width: 55%;
+  }
+
+  .instructions {
+    width: 35%;
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  input {
+    width: 75%;
+  }
+
+  button {
+    width: 85%;
+  }
+
+  #array-display {
+    font-size: 16px;
+  }
+
+  #result-display {
+    font-size: 14px;
+  }
+}
